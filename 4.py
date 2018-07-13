@@ -9,8 +9,8 @@ import time
 
 start = time.time()
 largest = 0
-for i in range(100,999):
-    for j in range(100,i):
+for i in range(999,100,-1):
+    for j in range(i,100,-1):
         product = i*j
         if product > largest and str(product) == str(product)[::-1]:
             largest = product
